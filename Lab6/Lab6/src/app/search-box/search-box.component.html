@@ -1,0 +1,15 @@
+<div class="card-row" style="display: flex; justify-content: space-between;">
+    <nb-card size="tiny" class="size-tiny">
+        <nb-card-header>Search</nb-card-header>
+      <nb-card-body>
+        <input nbInput #searchBox type="text" placeholder="Type to search...">
+
+        <ul>
+            <li *ngFor="let item of searchHistory$ | async">
+              {{item}}
+            </li>
+          </ul>
+      </nb-card-body>
+    </nb-card>
+    
+</div>

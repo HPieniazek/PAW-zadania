@@ -1,0 +1,28 @@
+<div class="card-row" style="display: flex; justify-content: space-between;">
+<nb-card size="tiny" class="size-tiny">
+    <nb-card-header>dodatnie</nb-card-header>
+  <nb-card-body>
+    a: {{ numbers$ | async }} <br>
+  </nb-card-body>
+</nb-card>
+<nb-card size="tiny" class="size-tiny">
+    <nb-card-header>Pięć pierwszych</nb-card-header>
+  <nb-card-body>
+    firstFiveNumbers : {{ firstFiveNumbers$ | async }} <br>
+  </nb-card-body>
+</nb-card>
+
+    <nb-card size="tiny" class="size-tiny">
+        <nb-card-header>Ósma</nb-card-header>
+      <nb-card-body>
+        eight : {{ eight$ | async }} <br>
+      </nb-card-body>
+    </nb-card> 
+    <nb-card size="tiny" class="size-tiny">
+        <nb-card-header>Z tekstem</nb-card-header>
+      <nb-card-body>
+        numberLabels : {{ numberLabels$ | async }} <br>
+      </nb-card-body>
+    </nb-card> 
+
+</div>

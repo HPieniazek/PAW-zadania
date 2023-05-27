@@ -1,0 +1,9 @@
+$cardWidth: 300px;
+
+:host {
+    ::ng-deep {
+      .size-tiny {
+            width: $cardWidth;
+        }
+      }
+  }

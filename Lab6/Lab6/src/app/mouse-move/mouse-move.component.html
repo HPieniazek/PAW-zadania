@@ -1,0 +1,14 @@
+<div class="card-row" style="display: flex; justify-content: space-between;">
+    <nb-card size="tiny" class="size-tiny">
+        <nb-card-header>Koordynaty myszy po kliknięciu</nb-card-header>
+      <nb-card-body>
+        on click {{ mouseOnClick$ | async }} <br>
+      </nb-card-body>
+    </nb-card>
+    <nb-card size="tiny" class="size-tiny">
+        <nb-card-header>Koordynaty myszy w interwale</nb-card-header>
+      <nb-card-body>
+        mouseInterval : {{ mouseInterval$ | async }} <br>
+      </nb-card-body>
+    </nb-card>
+</div>
